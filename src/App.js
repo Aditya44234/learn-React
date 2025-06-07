@@ -10,7 +10,7 @@ function App() {
 
     {/* Form  */}
 
-    <Form heading="Hello enter the text here"/>
+    <Form heading="Enter the text here"/>
 
 
 
