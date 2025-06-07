@@ -1,0 +1,42 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    background-color: red;
+}
+
+
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    flex-direction: column;
+
+
+
+}
+
+
+button{
+    margin: 10px 3px;
+    background-color: bisque;
+    color: red;
+    padding: 3px 4px;
+    border-radius: 6px;
+    /* transition: all 0.6s ease-in; */
+}
+
+
+button:hover{
+    background-color: white;
+    color: black;
+}
