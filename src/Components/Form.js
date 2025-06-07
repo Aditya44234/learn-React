@@ -38,12 +38,12 @@ function Form(props) {
 
         <h2>{props.heading} </h2>
         <div>
-        <textarea name="inpText" id="inpText"  value={Text} onChange={handleOnChange} rows={10} cols={90} placeholder='Enter Text' ></textarea>
+        <textarea className='txtArea px-2' name="inpText" id="inpText"  value={Text} onChange={handleOnChange} rows={10} cols={90} placeholder='Enter Text' ></textarea>
         </div>
 
         <div className="btns mx-5 my-3">
-        <button onClick={changeText}>Submit</button>
-        <button onClick={clearText}>Clear Text</button>
+        <button onClick={changeText}>Upper</button>
+        <button onClick={clearText}>Clear</button>
         <button onClick={copyToclip}>Copy</button>
 
         </div>
