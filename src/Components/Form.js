@@ -4,14 +4,13 @@ function Form(props) {
 
   
   const changeText=()=>{
-    console.log("Uppercase was clicked"+Text); 
+    // console.log("Uppercase was clicked"+Text); 
     let newText=Text.toUpperCase();
 
     SetText(newText);
     
   }
   const handleOnChange=(event)=>{
-    console.log("Helloget lost ")
     SetText(event.target.value)
     
   }
