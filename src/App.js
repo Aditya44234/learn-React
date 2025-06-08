@@ -1,6 +1,7 @@
 import './App.css';
 import Form from './Components/Form';
 import Navbar from './Components/Navbar';
+import About from './Components/About';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
     {/* Form  */}
 
     <Form heading="Enter the text here"/>
+
+    {/* About Us */}
+    <About/>
 
 
 
