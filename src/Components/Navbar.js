@@ -2,10 +2,30 @@ import React from 'react'
 
 
 export default function Navbar(props) {
+
+  let cond=true;
+
+  const toggleDarkMode=(props)=>{
+    if(cond===true){
+      document.body.style.backgroundColor='rgba(0, 0, 0)';
+      document.body.style.color='green';
+      cond=false;
+      
+    }else{
+      document.body.style.backgroundColor='white';
+      document.body.style.color='rgb(0, 0, 0)';
+      cond=true;
+
+    }
+  }
+
+
+
+
   return (
     <div>
 
-  <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <nav className="navbar navbar-expand-lg bg-body-tertiary" >
       <div className="container-fluid">
         <a className="navbar-brand" href="/">Navbar</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,15 +40,21 @@ export default function Navbar(props) {
               <a className="nav-link" href="/">About Us</a>
             </li>
 
-            {/* <li className="nav-item">
-              <a className="nav-link" href="/">Pricing</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li> */}
-
           </ul>
+
+
+          
+
         </div>
+
+        {/* Dark mode Button */}
+          <div  className="form-check form-switch text-dark "  onClick={toggleDarkMode}>
+
+            <input  type="checkbox" className="form-check-input" id='flexSwitchCheckDefault' />
+            <label htmlFor="flexSwitchCheckDefault" className='form-check-label' >Enable DarkMode</label>
+
+          </div>
+
       </div>
   </nav>
       

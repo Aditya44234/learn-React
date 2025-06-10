@@ -27,11 +27,15 @@
 
 }
 
+#flexSwitchCheckDefault{
+    cursor: pointer;
+}
 
 button{
     margin: 10px 3px;
     background-color: bisque;
     color: red;
+    
     padding: 3px 4px;
     border-radius: 6px;
     /* transition: all 0.6s ease-in; */

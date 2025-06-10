@@ -1,26 +1,23 @@
 import React, { useState } from 'react'
 
+
 function About() {
 
     const [ChageStyle,setChageStyle]=useState({
         backgroundColor:'white',
         color:'black',
         borderRadius:'10px',
-        border:'2px solid black'
-
-
+        border:'1px solid black'
     })
 
     const [btnText,setbtnText]=useState("Dark Mode");
 
-
     const toggleDark=()=>{
-
         if(ChageStyle.color==='black'){
             setChageStyle({
                 backgroundColor:'black',
-                color:'white',
-                border:'2px solid white',
+                color:'green',
+                border:'1px solid green',
                 borderRadius:'10px'
             });
 
@@ -29,25 +26,20 @@ function About() {
             setChageStyle({
                 backgroundColor:'white',
                 color:'black',
-                border:'2px solid black',
+                border:'1px solid black',
                 borderRadius:'10px'
-
-
-            })
+            })            
             setbtnText(" Dark Mode");
         }
     }
 
-    
-
-
-
-
   return (
-    <div style={ChageStyle} className='container my-4'>
 
 
+      <div  className='container my-4'>
         <h1 className='container mx-3' >About Us</h1>
+
+
     <div class="accordion" id="accordionExample" style={ChageStyle}>
         <div class="accordion-item" style={ChageStyle}>
             <h2 class="accordion-header">
@@ -89,9 +81,9 @@ function About() {
 
     <div className="container my-4 mx-3" >
         <button type='button' onClick={toggleDark}  className='btn btn-primary'>{btnText}</button>
+    </div>      
     </div>
-      
-    </div>
+    
   )
 }
 
